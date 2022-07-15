@@ -1,2 +1,5 @@
 # MULTIPLE STATIC WEBSITES EXAMPLES
-<a href="steakhouse/index.html">STEAKHOUSE</a>
+- [STEAKHOUSE](steakhouse/index.html)
+- [TONDUMAL CAFE](tondumal/index.html)
+- [VERMAN CLASSES](vermanclasses/index.html)
+- [TWITTER](https://twitter.com/Alokverman108)
