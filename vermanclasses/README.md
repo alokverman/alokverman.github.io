@@ -1,1 +1,1 @@
-# This is my institute website which was made by me with the help of Avinash Sir.
+# VERMAN CLASSES - AN INSTITUTE WEBSITE
