@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-query1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color:goldenrod;
+            font-family: sans-serif;
+            
+        
+        }
+
+        .container {
+            height: auto;
+            border: 2px solid;
+
+        }
+
+        .header {
+            border: 1px dotted;
+            height: 140px;
+           
+            font-family: sans-serif;
+            /* padding: 2%; */
+            font-weight:bolder;
+            text-transform: uppercase;
+            font-size: xx-large;
+        }
+        .logo{
+            width: 20%;
+            float: left;
+            height: 100%;
+        }
+        .logo img{
+            width:80%;
+            height: 100%;
+            border-radius: 50%;
+            padding: 0.7em;
+            
+        }
+        
+        .header h1{
+            /* background-color: chartreuse; */
+            padding-top: 10px;
+            text-align: center;
+            width: 80%;
+            float: right;
+
+        }
+        
+
+        .navigation {
+            border: 1px solid;
+            height: 40px;
+            position: sticky;
+            top: 0;
+        }
+        .navigation ul{
+            list-style: none;
+        }
+        .navigation ul li{
+            float:left;
+            width: 20%;
+            /* border: 1px dotted green; */
+            text-align: center;
+            
+        }
+        .navigation ul li a{
+            text-decoration: none;
+            padding-top: 9px ;
+            display:block;
+            /* color: red; */
+        }
+        /* .navigation ul li a:hover{ */
+            /* border-bottom:2px solid red; */
+            /* border: 2px solid red; */
+
+        /* } */
+
+        .left-sidebar {
+            border: 2px solid;
+            width: 20%;
+            height: 100%;
+            float: left;
+        }
+        .left-sidebar ul, .right-sidebar ul{
+            list-style: none;
+        }
+        .left-sidebar ul li{
+            padding-bottom: 10px;
+        }
+        .left-sidebar ul li a , .right-sidebar ul li a {
+            display: block;
+            padding-left: 1em;
+            padding-top: 1em;
+            font-size: larger;
+            text-decoration: none;
+        
+        }
+        .left-sidebar h2, .right-sidebar h2{
+            text-transform: uppercase;
+            text-align: center;
+            box-shadow: 2px 2px 4px;
+            letter-spacing: 8px;
+            padding: 8px 0;
+            border-bottom: 2px solid goldenrod;
+        }
+
+        .content {
+            /* border: 2px dashed; */
+            width: 60%;
+            height: 100%;
+            float: left;
+            padding-bottom: 2em;
+        }
+            .content h2{
+                text-align: center;
+                font-size: 900;
+                font-weight: bold;
+                padding: 10px 0;
+            }
+            .content p{
+                text-align: center;
+                line-height: 1.5;
+                font-size: large;
+                
+
+            }
+            .content img{
+                width: 90%;
+                padding-left: 8%;
+            }
+        .right-sidebar {
+            border: 2px solid;
+            width: 20%;
+            height: 100%;
+            float: right;
+        }
+        .right-sidebar details{
+            margin-left: 1em;
+        }
+        .right-sidebar details summary {
+            padding: 20px 0;
+            cursor: pointer;
+        }
+        .right-sidebar details p{
+            padding-bottom: 1em;
+            padding-left: 10px;
+        }
+        .footer {
+            border: 1px solid;
+            height: 40px;
+            clear: both;
+            /* text-align: center; */
+        }
+        .footer p{
+            text-align: center;
+            padding-top: 8px;
+        }
+        @media screen and (max-width:600px) {
+            .left-sidebar,
+            .right-sidebar,
+            .content {
+                width: 100%;
+            }
+            .navigation{
+                height: auto;
+            }
+            .navigation ul li{
+                width:100%;
+                
+            }
+
+        }
+
+        @media screen and (max-width:1200px) {
+            .right-sidebar {
+                width: 100%;
+            }
+
+            .content {
+                width: 80%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://www.clipartmax.com/png/small/218-2182030_2016-taste-%E2%80%9Cchef-wars%E2%80%9D-hotel-waiter-logo-png.png" alt="Logo">
+            </div>
+        <h1>Tondumal CAFE</h1> 
+        </div>
+        <div class="navigation">
+            <ul>
+                
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">HELP & SUPPORT</a></li>
+                <li><a href="#">ACHIEVEMENT</a></li>
+                <li><a href="#"> EVENTS & MORE</a></li>
+            </ul>
+        </div>
+        <div class="left-sidebar">
+            <h2>MENU</h2>
+            <ul>
+                <li><a href="#">Staters</a></li>
+                <li><a href="#">Shakes</a></li>
+                <li><a href="#">Moctail</a></li>
+                <li><a href="#">Intailian</a></li>
+                <li><a href="#">South Indian</a></li>
+
+            </ul>
+        </div>
+        <div class="content">
+            <h2>WELCOME TO TONDUMAL</h2>
+            <img src="tondumal.png"alt="restro">
+            <p>Tondumal, a Netherlands tapas restaurant, uses spectacular visuals on their website — you can almost hear the low chatter of friends visiting, the clinking of full wine glasses, and smell the delightful ocean saltiness wafting from seafood dishes.</p><br>
+            <p>Photos for any website should be high quality, but this is especially true for a restaurant's website. La Barraca uses images to show us their sociable atmosphere and their mouth-watering tapas. These beautiful photos give us a pretty good idea of what we’d experience if we decide to visit.
+            </p>
+           
+        </div>
+        <div class="right-sidebar">
+            <h2>Menu</h2>
+            
+                <details>
+                    <summary>SANDWICH</summary>
+                    <p>Veg. Cheesy Sandwich </p>
+                    <p>Veg Double Cheesy Sandwich</p>
+                    <p>Paneer cheesy Sandwich</p>
+                    <p>Chicken Cheesy Sandwich</p>
+                </details>
+               <details>
+                <summary>BURGER</summary>
+                <p>Veg cheesy Burger </p>
+                <p>Veg Double Cheesy Burger</p>
+                <p>Paneer Cheesy Burger</p>
+                <p>Chicken Cheesy Burger</p>
+               </details> 
+                <details>
+                    <summary>TANDOOR</summary>
+                    <p>Paneer Tikka </p>
+                    <p>Chicken Tikka</p>
+                    <p>Chicken Tandoori</p>
+                    <p>Juicy Chicken Tandoori</p>
+                </details>
+                <details>
+                    <summary>Chinese</summary>
+                    <p>Veg Hakka Noodles</p>
+                    <p>Chicken Hakka Noodles</p>
+                    <p>Paneer Hakka Noodles</p>
+                    <p>Veg Schezwan Noodles</p>
+            </details>
+                <details>
+                    <summary>SOUP</summary>
+                    <p>Veg Hot Soup</p>
+                    <p>Chicken Hot Soup</p>
+                    <p>Crispy Babycorn Soup</p>
+                    <p>Tomato Soup</p>
+                </details>
+        </div>
+        <div class="footer">
+            <p>&copy 2022 reserved to Tondumal </p>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
