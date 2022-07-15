@@ -14,21 +14,37 @@ body {
 
 .header {
     position: sticky;   
-    top: 0; 
-    background-color: bisque; 
+    background-color: bisque;
+    height: 140px; 
+    /* border: solid red; */
+    padding-top: 1em;
 }
-.header h2,h3{
-    float: right;
-}
-
 .header h1 {
     font-size: 400%;
     font-family: sans-serif;
     text-transform: uppercase;
-    padding-top: 0.5em;
-    /* border-bottom: 2px solid; */
+    /* padding-top: 0.5em; */
+    width: 60%;
+    float: left;
+    /* border: 1px solid; */
+    margin: 0;
 }
+.contacts{
+    width: 40%;
+    float: right;
+}
+.contacts span{
+    display: block;
+    padding-bottom: 5px;
+}
+.contacts span a{
+    text-decoration: none;
 
+}
+.nav{
+    clear: both;
+
+}
 .nav ul {
     list-style: none;
 }
